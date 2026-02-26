@@ -1,28 +1,43 @@
-/* Color variables */
+/* =========================
+   COLOR VARIABLES
+========================= */
 :root {
   --white-color: #ffffff;
   --bg-color: #ffffff;
-  --gray-color: #ffffff;
-}
-#j{
-  color: rgb(20, 218, 63);
-}
-#k{
-  color:  rgb(20, 218, 63);
+  --gray-color: #cbd5f5;
 }
 
+/* =========================
+   HERO TEXT COLOR
+========================= */
+#k {
+  color: #e6f6ff;
+}
 
-/* Changing background color */
+#j {
+  color: #38bdf8;
+}
+
+#k,
+#j {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+/* =========================
+   GLOBAL
+========================= */
 body {
   background: var(--bg-color) !important;
 }
 
-/* Changing link color */
+/* Navbar links */
 .nav-item .nav-link {
   color: var(--white-color);
 }
 
-/* Hero section background image */
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   height: 100vh;
   background-image: url("../images/home-bg.jpeg");
@@ -31,41 +46,108 @@ body {
   background-attachment: fixed;
 }
 
-#skills i {
-  height: 100px;
-  width: 100px;
+.hero-text {
+  max-width: 600px;
+  text-align: left;
 }
 
-#portfolio img {
-  height: 300px;
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+.skill-card {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 18px;
+  border: none;
+  transition: all 0.35s ease;
+}
+
+.skill-card i {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.skill-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   PORTFOLIO SECTION
+========================= */
+.portfolio-card {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: none;
+  transition: all 0.35s ease;
+}
+
+.portfolio-card img {
+  height: 230px;
   object-fit: cover;
 }
 
-#about .img,
-#about img,
-.hire-text h2 {
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   ABOUT SECTION (FIXED)
+========================= */
+#about {
   position: relative;
+  background: #f8fafc;
 }
 
-/* Timeline background line */
-#about .img::before {
+/* Timeline vertical line (BACKGROUND ONLY) */
+#about::before {
   content: "";
-  left: 50%;
-  width: 4px;
   position: absolute;
-  height: calc(100% + 140px);
+  top: 420px;
+  left: 50%;
+  width: 3px;
+  height: calc(100% - 500px);
   background: var(--gray-color);
+  transform: translateX(-50%);
 }
 
-#about img,
+/* Timeline images */
+#about img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hire circle */
 #about .hire-text h2 {
   width: 140px;
-}
-
-#about .hire-text h2 {
   height: 140px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
 }
 
+/* =========================
+   SOCIAL ICONS
+========================= */
 .social-icons a {
   width: 40px;
   height: 40px;
@@ -76,11 +158,16 @@ footer .social-icons a {
   height: 30px;
 }
 
+/* =========================
+   CV
+========================= */
 #cv img {
   width: 230px;
 }
 
-/* Contact section background image */
+/* =========================
+   CONTACT SECTION
+========================= */
 #contact {
   background-size: cover;
   background-attachment: fixed;
@@ -88,6 +175,9 @@ footer .social-icons a {
   background-image: url("../images/contact-bg.jpeg");
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
 @media screen and (max-width: 990px) {
   #skills .card {
     width: calc(100% / 2 - 10px) !important;
@@ -95,8 +185,14 @@ footer .social-icons a {
 }
 
 @media screen and (max-width: 668px) {
+
   #skills .card,
   #portfolio .card-wrapper {
     width: 100% !important;
+  }
+
+  #about::before {
+    display: none;
+    /* mobile এ line hide */
   }
 }

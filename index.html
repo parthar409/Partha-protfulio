@@ -87,11 +87,15 @@
   </header>
 
   <!-- Hero or Showcase Section -->
-  <section class="hero d-flex flex-column align-items-center justify-content-center">
-    <div class="text-center">
-      <h1 class="h1 fw-medium fst-italic" id="k">Partha Sarathi Roy</h1>
-      <h2 class="display-3 fw-bold" id="j">Software Engineer & CSE Student</h2>
-      <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
+  <section class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="h1 fw-medium fst-italic" id="k">Partha Sarathi Roy</h1>
+        <h2 class="display-3 fw-bold" id="j">Software Engineer & CSE Student</h2>
+        <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-4 btn-primary p-3">
+          TELL ME MORE
+        </a>
+      </div>
     </div>
   </section>
 
@@ -100,31 +104,50 @@
     <div class="row mt-4 py-3">
       <div class="col-12 d-flex flex-column text-center justify-content-center">
         <h2>SKILLS</h2>
-        <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the
-          field.</h5>
+        <h5 class="text-secondary fw-normal py-2 fst-italic">
+          Continuously improving my skills and knowledge in the field.
+        </h5>
       </div>
     </div>
-    <div class="row d-flex justify-content-between mx-0">
-      <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-        <i
-          class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
-        <h3 class="mt-4 h4">Front-end Development</h3>
-        <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building
-          user-friendly interfaces, and using modern frameworks like ReactJS.</p>
+
+    <div class="row mt-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+        <div class="card skill-card text-center bg-white p-4">
+          <i
+            class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
+          <h3 class="mt-4 h4">Front-end Development</h3>
+          <p>
+            Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly
+            interfaces, and using modern frameworks like ReactJS.
+          </p>
+        </div>
       </div>
-      <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-        <i
-          class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
-        <h3 class="mt-4 h4">Back-end Development</h3>
-        <p class="text-center">Skilled in server-side programming using technologies like Node.js and Express.
-          Experience working with databases such as MongoDB and MySQL.</p>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+        <div class="card skill-card text-center bg-white p-4">
+          <i
+            class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
+          <h3 class="mt-4 h4">Back-end Development</h3>
+          <p>
+            Skilled in server-side programming using technologies like Node.js and Express. Experience working with
+            databases such as MongoDB and MySQL.
+          </p>
+        </div>
       </div>
-      <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-        <i
-          class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
-        <h3 class="mt-4 h4">Mobile App Development</h3>
-        <p class="text-center">Proficient in developing mobile apps for iOS and Android using frameworks like React
-          Native. Experienced in building engaging and intuitive mobile user interfaces.</p>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+        <div class="card skill-card text-center bg-white p-4">
+          <i
+            class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
+          <h3 class="mt-4 h4">Mobile App Development</h3>
+          <p>
+            Proficient in developing mobile apps for iOS and Android using frameworks like React Native. Experienced in
+            building engaging and intuitive mobile user interfaces.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -134,61 +157,75 @@
     <div class="row mt-4 py-3">
       <div class="col-12 d-flex flex-column text-center justify-content-center">
         <h2>PORTFOLIO</h2>
-        <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+        <h5 class="text-secondary fw-normal py-2 fst-italic">
+          A collection of projects I've worked on.
+        </h5>
       </div>
-      <div class="row mt-5 mx-0 justify-content-center align-items-center">
-        <div class="col-lg-3 col-md-4 col-12 card-wrapper">
-          <div class="card mt-4">
-            <img src="images/ecommerce.png" class="img-fluid" alt="portfolio-img">
-            <div class="card-body text-center">
-              <h6 class="card-title">E-commerce Website</h6>
-              <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-            </div>
+    </div>
+
+    <div class="row mt-5 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="images/ecommerce.png" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title">E-commerce Website</h6>
+            <p class="card-text text-secondary">HTML / CSS / JavaScript</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 card-wrapper">
-          <div class="card mt-4">
-            <img src="images/landing-page.jpg" class="img-fluid" alt="portfolio-img">
-            <div class="card-body text-center">
-              <h6 class="card-title">Responsive Landing Page</h6>
-              <p class="card-text text-secondary">HTML/CSS/Bootstrap</p>
-            </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="images/landing-page.jpg" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title">Responsive Landing Page</h6>
+            <p class="card-text text-secondary">HTML / CSS / Bootstrap</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 card-wrapper">
-          <div class="card mt-4">
-            <img src="images/calculator-app.jpg" class="img-fluid" alt="portfolio-img">
-            <div class="card-body text-center">
-              <h6 class="card-title">Calculator App</h6>
-              <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-            </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="images/calculator-app.jpg" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title">Calculator App</h6>
+            <p class="card-text text-secondary">HTML / CSS / JavaScript</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 card-wrapper">
-          <div class="card mt-4">
-            <img src="images/blog.jpg" class="img-fluid" alt="portfolio-img">
-            <div class="card-body text-center">
-              <h6 class="card-title">Blog Website</h6>
-              <p class="card-text text-secondary">HTML/CSS/PHP</p>
-            </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="images/blog.jpg" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title">Blog Website</h6>
+            <p class="card-text text-secondary">HTML / CSS / PHP</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 card-wrapper">
-          <div class="card mt-4">
-            <img src="images/react.jpg" class="img-fluid" alt="portfolio-img">
-            <div class="card-body text-center">
-              <h6 class="card-title">Task Management App</h6>
-              <p class="card-text text-secondary">ReactJS</p>
-            </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="images/react.jpg" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title">Task Management App</h6>
+            <p class="card-text text-secondary">ReactJS</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 card-wrapper">
-          <div class="card mt-4">
-            <img src="images/python.jpg" class="img-fluid" alt="portfolio-img">
-            <div class="card-body text-center">
-              <h6 class="card-title">Data Visualization</h6>
-              <p class="card-text text-secondary">Python/Plotly</p>
-            </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="card portfolio-card">
+          <img src="images/python.jpg" class="img-fluid" alt="portfolio-img">
+          <div class="card-body text-center">
+            <h6 class="card-title">Data Visualization</h6>
+            <p class="card-text text-secondary">Python / Plotly</p>
           </div>
         </div>
       </div>
@@ -217,7 +254,7 @@
         <h5>2022-2023</h5>
         <h5>Complete Web Development Online</h5>
         <p>I completed the “Complete Web Development with Jhankar Mahbub” course online. Through this course, I built
-          strong skills in HTML, CSS, JavaScript, and modern web development tools and frameworks.</p>
+          strong skills in HTML, CSS JavaScript, and modern web development tools and frameworks.</p>
       </div>
       <div class="col-3 col-md-2 img text-center">
         <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-1.jpg" alt="img">
