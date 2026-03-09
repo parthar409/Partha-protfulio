@@ -18,7 +18,7 @@ body {
 #header {
     width: 100%;
     height: 99vh;
-    background-image: url(Assest/bp2.png);
+    background-image: url(Assets/bp2.png);
     background-size: cover;
     background-position: center;
 }
@@ -396,7 +396,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(Assest/k.png);
+        background-image: url(Assets/k.png);
     }
 
     .header-text {
