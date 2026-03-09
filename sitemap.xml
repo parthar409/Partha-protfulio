@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://parthasarathiroy.netlify.app/</loc>
-    <priority>1.0</priority>
-  </url>
+<urlset 
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+<url>
+<loc>https://parthasarathiroy.netlify.app/</loc>
+
+<image:image>
+<image:loc>
+https://parthasarathiroy.netlify.app/images/profile-img.png
+</image:loc>
+</image:image>
+
+<priority>1.0</priority>
+
+</url>
 </urlset>
