@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -65,7 +66,7 @@
 
 
     <!-- ===== FONT AWESOME ===== -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
 </head>
@@ -285,7 +286,7 @@
 
                     <div class="work">
                         <img src="Assets/work-1.webp" alt="StudyShelf Project by Partha Sarathi Roy"
-                            title="StudyShelf Project by Partha Sarathi Roy">
+                            title="StudyShelf Project by Partha Sarathi Roy" loading="lazy">
                         <div class="layer">
                             <h3>StudyShelf Platform</h3>
                             <p>Full-stack online study management web application with authentication, dashboard and
@@ -300,7 +301,7 @@
 
                     <div class="work">
                         <img src="Assets/work-2.webp" alt="Java Ecommerce Order System"
-                            title="Java Ecommerce Order System">
+                            title="Java Ecommerce Order System" loading="lazy">
                         <div class="layer">
                             <h3>E-commerce Order System</h3>
                             <p>Java based application for managing e-commerce order processing and backend operations.
@@ -314,7 +315,7 @@
 
                     <div class="work">
                         <img src="Assets/work-3.webp" alt="City Map Pathfinding Java Project"
-                            title="City Map Pathfinding Java Project">
+                            title="City Map Pathfinding Java Project" loading="lazy">
                         <div class="layer">
                             <h3>City Map Pathfinding</h3>
                             <p>Java project implementing pathfinding algorithms to determine the shortest route between
@@ -338,7 +339,8 @@
 
                     <!-- Blog 1 -->
                     <div class="blog">
-                        <img src="blog/blogimage.webp" alt="Portfolio Website Blog" title="Portfolio Website Blog">
+                        <img src="blog/blogimage.webp" alt="Portfolio Website Blog" title="Portfolio Website Blog"
+                            loading="lazy">
                         <div class="blog-layer">
                             <h3>How I Built My Personal Portfolio Website</h3>
                             <p>Learn how I created my portfolio website using HTML, CSS and JavaScript.</p>
@@ -352,7 +354,8 @@
 
                     <!-- Blog 2 -->
                     <div class="blog">
-                        <img src="blog/test1.webp" alt="Web Development Basics" title="Web Development Basics">
+                        <img src="blog/test1.webp" alt="Web Development Basics" title="Web Development Basics"
+                            loading="lazy">
                         <div class="blog-layer">
                             <h3>Understanding Modern Web Development</h3>
                             <p>An overview of modern web development including frontend and backend technologies.</p>
@@ -366,7 +369,7 @@
                     <!-- Blog 3 -->
                     <div class="blog">
                         <img src="blog/test2.webp" alt="Why Developers Need Portfolio"
-                            title="Why Developers Need Portfolio">
+                            title="Why Developers Need Portfolio" loading="lazy">
                         <div class="blog-layer">
                             <h3>Why Every Developer Needs a Portfolio</h3>
                             <p>A portfolio website helps developers showcase projects, skills and experience.</p>
@@ -429,7 +432,6 @@
     <div class="copyright">
         <p>copyright &copy; Partha Sarathi Roy</p>
     </div>
-    <script src="https://kit.fontawesome.com/7096724b5a.js" crossorigin="anonymous"></script>
     <script>var tablinks = document.getElementsByClassName("tab-link"), tabcontents = document.getElementsByClassName("tab-contents"); function opentab(t) { for (tablink of tablinks) tablink.classList.remove("active-link"); for (tabcontent of tabcontents) tabcontent.classList.remove("active-tab"); event.currentTarget.classList.add("active-link"), document.getElementById(t).classList.add("active-tab") }</script>
     <script>var sidemeu = document.getElementById("sidemenu"); function openmenu() { sidemeu.style.right = "0" } function closemenu() { sidemeu.style.right = "-200px" }</script>
     <script>const scriptURL = "https://script.google.com/macros/s/AKfycbyctsJz44kN6g0GGPkvXcWyvL56LgDYGoqVh-QrOlsSdZshCfKO_j3PfX1ZZd2QHmla2g/exec", form = document.forms["submit-to-google-sheet"], msg = document.getElementById("msg"); form.addEventListener("submit", (e => { e.preventDefault(), fetch(scriptURL, { method: "POST", body: new FormData(form) }).then((e => { msg.innerHTML = "Message Sent Successfully", setTimeout((function () { msg.innerHTML = "" }), 5e3), form.reset() })).catch((e => console.error("Error!", e.message))) }))</script>
