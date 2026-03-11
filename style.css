@@ -601,6 +601,10 @@ nav .fas {
 
 }
 
-h6 {
+span {
     font-size: 10px;
+}
+
+strong {
+    font-weight: normal;
 }
