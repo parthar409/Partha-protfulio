@@ -453,9 +453,6 @@ nav .fas {
         flex-basis: 100%;
     }
 
-    .about-text {
-        padding: 0 15px;
-    }
 
     .about-col-1 {
         margin-bottom: 30px;
@@ -581,4 +578,25 @@ nav .fas {
 
 #about {
     scroll-margin-top: 80px;
+}
+
+@media only screen and (max-width:600px) {
+
+    .container {
+        padding: 10px 6%;
+    }
+
+    .about-col-2 {
+        padding: 0 5px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .tab-title {
+        flex-wrap: wrap;
+    }
+
 }
