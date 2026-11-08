@@ -707,3 +707,10 @@ nav ul li{margin:20px 24px}nav ul li a{font-size:16px}
 .copyright{padding:20px 16px;font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+/* Hero actions */
+.hero-eyebrow{margin:0 0 18px;color:#ffd0db;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.hero-actions{display:flex;align-items:center;gap:18px;margin-top:26px}
+.hero-actions .btn{margin:0}
+.hero-contact{padding:12px 0;color:var(--text);font-weight:650;text-decoration:none;transition:color .18s}
+.hero-contact:hover{color:var(--accent)}
+@media(max-width:600px){.hero-eyebrow{font-size:11px;letter-spacing:.12em}.hero-actions{flex-wrap:wrap;gap:14px}}
