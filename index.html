@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,9 +15,9 @@
     <link rel="manifest" href="/site.webmanifest">
 
 
-    <link rel="preload" href="Assets/aboutpic.webp" as="image">
+    
     <link rel="preload" href="Assets/bp2.webp" as="image">
-    <link rel="preload" href="Assets/k.webp" as="image">
+    
 
 
     <link rel="canonical" href="https://parthasarathiroy.netlify.app/">
@@ -149,7 +149,7 @@
 
 <body>
     <main>
-        <div id="header" data-aos="fade-up">
+        <div id="header">
             <div class="container">
                 <nav>
                     <div class="logo"><strong class="p-logo">PAR</strong>THA<strong class="p-logo">.</strong></div>
@@ -166,13 +166,13 @@
                     <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
-                    <h1>Hi, I'm <strong class="span1" id="element"></strong><br>Software Engineer & <br>CSE
+                    <p class="hero-eyebrow">Software Engineer · Web &amp; Android Developer</p><h1>Hi, I'm <strong class="span1" >Partha Sarathi Roy</strong><br>Software Engineer & <br>CSE
                         Student
-                    </h1>
+                    </h1><div class="hero-actions"><a class="btn btn2" href="#portfolio">View my work</a><a class="hero-contact" href="#contact">Let's talk</a></div>
                 </div>
             </div>
         </div>
-        <div id="about" data-aos="fade-up">
+        <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1"><img src="Assets/aboutpic.webp" alt="Partha Sarathi Roy Software Engineer"
@@ -322,7 +322,7 @@
             </div>
         </div>
         <div style="height:150px;"></div>
-        <div id="services" data-aos="fade-up">
+        <div id="services">
             <div class="container">
                 <h2 class="sub-title">My Services</h2>
                 <div class="services-list">
@@ -355,7 +355,7 @@
                 </div>
             </div>
         </div>
-        <div id="portfolio" data-aos="zoom-in">
+        <div id="portfolio">
             <div class="container">
                 <h2 class="sub-title">My Work</h2>
                 <div class="work-list">
@@ -407,7 +407,7 @@
         </div>
         <!-- ........................ -->
 
-        <div id="blog" data-aos="fade-up">
+        <div id="blog">
             <div class="container">
                 <h2 class="sub-title">My Blog</h2>
 
@@ -511,24 +511,14 @@
     <script>var tablinks = document.getElementsByClassName("tab-link"), tabcontents = document.getElementsByClassName("tab-contents"); function opentab(t) { for (tablink of tablinks) tablink.classList.remove("active-link"); for (tabcontent of tabcontents) tabcontent.classList.remove("active-tab"); event.currentTarget.classList.add("active-link"), document.getElementById(t).classList.add("active-tab") }</script>
     <script>var sidemeu = document.getElementById("sidemenu"); function openmenu() { sidemeu.style.right = "0" } function closemenu() { sidemeu.style.right = "-200px" }</script>
     <script>const scriptURL = "https://script.google.com/macros/s/AKfycbyctsJz44kN6g0GGPkvXcWyvL56LgDYGoqVh-QrOlsSdZshCfKO_j3PfX1ZZd2QHmla2g/exec", form = document.forms["submit-to-google-sheet"], msg = document.getElementById("msg"); form.addEventListener("submit", (e => { e.preventDefault(), fetch(scriptURL, { method: "POST", body: new FormData(form) }).then((e => { msg.innerHTML = "Message Sent Successfully", setTimeout((function () { msg.innerHTML = "" }), 5e3), form.reset() })).catch((e => console.error("Error!", e.message))) }))</script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
 
-    <script>
-        var typed = new Typed("#element", {
-            strings: ["Partha Sarathi Roy"],
-            typeSpeed: 80,
-            backSpeed: 50,
-            backDelay: 1000,
-            loop: true
-        });
-    </script>
+    
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
 
-    <script>
-        AOS.init();
-    </script>
+    
 
 
 </body>
